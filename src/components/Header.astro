@@ -1,0 +1,21 @@
+---
+import styles from "../styles/header.module.css"
+---
+
+<header class="container">
+    <nav class={styles.nav}>
+        <div class={styles.logo} style="background-image: url('logo.svg');"></div>
+        <div>
+            <div class={styles.links}>
+                <a href="/products" rel="noreferrer">Products</a>
+                <a href="/research" rel="noreferrer">Research</a>
+                <a href="/about" rel="noreferrer">About Us</a>
+                <a href="https://blog.datawealthy.com" rel="noreferrer">Blog</a>
+            </div>
+            <div class={styles.links}>
+                <button class="btn">Login</button>
+                <button class="btn-primary">Donate</button>
+            </div>
+        </div>
+    </nav>
+</header>
