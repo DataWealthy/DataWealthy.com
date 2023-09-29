@@ -1,0 +1,53 @@
+.bottom_content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.main_content {
+    border: 1px solid var(--text);
+    padding: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 128px;
+}
+
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.links a {
+    line-height: 35px;
+}
+
+.second_section {
+    width: 40%;
+}
+
+@media screen and (max-width: 1400px) {
+    .second_section {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 511px) {
+    .links {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
