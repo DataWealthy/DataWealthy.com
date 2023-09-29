@@ -1,0 +1,49 @@
+---
+import styles from "../styles/footer.module.css"
+---
+
+<footer class:list={["container", "block"]}>
+    <div class={styles.main_content}>
+        <div class={styles.links}>
+            <div><img src="/logo.svg" alt="Data Wealthy Logo" width="58px" height="73px" /></div>
+            <div>
+                <h3>About Us</h3>
+                <a href="#">AI Development</a><br/>
+                <a href="#">AI Accessibility</a><br/>
+                <a href="#">AI Solutions</a><br/>
+                <a href="#">AI Services</a><br/>
+                <a href="#">AI Resources</a>
+            </div>
+            <div>
+                <h3>Contact Us</h3>
+                <a href="https://blog.datawealthy.com">Blog</a><br/>
+                <a href="#">FAQ</a><br/>
+                <a href="#">Support</a><br/>
+                <a href="/terms-of-services">Term of Service</a><br/>
+                <a href="/privacy-policy">Privacy Policy</a>
+            </div>
+            <div>
+                <h3>Site Map</h3>
+                <a href="#">Career Opportunities</a><br/>
+                <a href="#">Press Releases</a><br/>
+                <a href="#">Events</a><br/>
+                <a href="#">Partnerships</a><br/>
+                <a href="/brands">Our Brands</a>
+            </div>
+        </div>
+        <div class={styles.second_section}>
+            <h3>Subscribe</h3>
+            <p>Stay Updated with the Latest Features and Releases</p>
+            <div class={styles.newsletter}>
+                <input type="email" placeholder="Enter your email" required />
+                <button class="btn">Subscribe</button>
+            </div>
+            <p class="small">By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our company.</p>
+        </div>
+    </div>
+    <div class={styles.bottom_content}>
+        <p>&copy; Data Wealthy Foundation. All Rights Reserved.</p>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-of-services">Terms of Services</a>
+    </div>
+</footer>
