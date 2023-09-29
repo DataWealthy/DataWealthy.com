@@ -1,21 +1,57 @@
 ---
-import styles from "../styles/header.module.css"
+import styles from "../styles/header.module.css";
 ---
 
-<header class="container">
-    <nav class={styles.nav}>
-        <div class={styles.logo} style="background-image: url('logo.svg');"></div>
-        <div>
-            <div class={styles.links}>
-                <a href="/products" rel="noreferrer">Products</a>
-                <a href="/research" rel="noreferrer">Research</a>
-                <a href="/about" rel="noreferrer">About Us</a>
-                <a href="https://blog.datawealthy.com" rel="noreferrer">Blog</a>
-            </div>
-            <div class={styles.links}>
-                <button class="btn">Login</button>
-                <button class="btn-primary">Donate</button>
-            </div>
-        </div>
-    </nav>
+<header>
+  <nav class:list={[styles.nav, "container"]}>
+    <div class={styles.logo} style="background-image: url('logo.svg');"></div>
+    <div class={styles.middle_section}>
+      <div class={styles.links}>
+        <a href="/products" rel="noreferrer">Products</a>
+        <a href="/research" rel="noreferrer">Research</a>
+        <a href="/about" rel="noreferrer">About Us</a>
+        <a href="https://blog.datawealthy.com" rel="noreferrer">Blog</a>
+      </div>
+      <div class={styles.links}>
+        <button class="btn">Login</button>
+        <button class="btn-primary">Donate</button>
+      </div>
+    </div>
+    <div class={styles.menu}>
+      <span data-menu class="material-symbols-outlined">menu</span>
+      <div class={styles.menu_content} data-is-visible="false">
+        <div class={styles.links}>
+            <a href="/products" rel="noreferrer">Products</a>
+            <a href="/research" rel="noreferrer">Research</a>
+            <a href="/about" rel="noreferrer">About Us</a>
+            <a href="https://blog.datawealthy.com" rel="noreferrer">Blog</a>
+          </div>
+          <div class={styles.links}>
+            <button class="btn">Login</button>
+            <button class="btn-primary">Donate</button>
+          </div>
+      </div>
+    </div>
+  </nav>
 </header>
+
+<script is:inline>
+    const menu_opened = document.querySelector("[data-menu]");
+
+    var is_menu_opened = false;
+
+    menu_opened.addEventListener("click", manage_menu);
+
+    function manage_menu() {
+        is_menu_opened = !is_menu_opened
+
+        // Make body unscrollable
+        document.getElementsByTagName('body')[0].style.overflow = is_menu_opened ? "hidden" : "unset"
+
+        // Changing Icon to close or to menu
+        menu_opened.innerHTML = is_menu_opened ? "close" : "menu"
+
+        // Make Menu visible
+        document.querySelector("[data-is-visible]").setAttribute("data-is-visible", is_menu_opened)
+    }
+</script>
