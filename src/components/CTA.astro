@@ -1,0 +1,29 @@
+---
+import styles from "../styles/CTA.module.css"
+import { Image } from "astro:assets";
+import support from "../img/support.jpg"
+---
+
+<div class={styles.layout_1}>
+    <center><Image src={support} loading="lazy" alt="Support" class="tinted" /></center>
+    <div class:list={[styles.layout_1_content, "container", "block"]}>
+        <h2>Support our projects with data</h2>
+        <p>Your data can make a difference. Contribute to our upcoming projects and help advance AI.</p>
+        <div class="btn-group">
+            <button class="btn-primary">Learn More</button>
+            <button class="btn">Contribute</button>
+        </div>
+    </div>
+</div>
+
+<div class:list={[styles.layout_2, "container", "block"]}>
+    <div><h2>Stay Updated with Data Wealthy</h2></div>
+    <div>
+        <p>Subscribe to our newsletter for the latest updates and news from Data Wealthy.</p>
+        <form>
+            <input type="email" placeholder="Enter your email" />
+            <button class="btn-primary">Submit</button>
+        </form>
+        <p class="small">By clicking Sign Up you're confirming that you agree with our <a href="/terms-of-service">Terms and Conditions</a>.</p>
+    </div>
+</div>
