@@ -1,40 +1,27 @@
 ---
 import Main from "../layouts/main.astro";
+import styles from "../styles/index.module.css";
+import { Image } from "astro:assets";
+import hero_img from "../img/hero.jpg";
 ---
 
 <Main title="Data Wealthy">
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
-	<h1>Hello World!</h1>
+  <div class={styles.hero}>
+    <center>
+		<Image src={hero_img} class="tinted" loading="lazy" alt="A group of people standing around a table with laptops." />
+	</center>
+    <div class={styles.hero_content}>
+      <h1>Making AI accessible to all, with Data Wealthy</h1>
+      <p>
+        Data Wealthy is a non-profit organization dedicated to making AI
+        technology more accessible to people. Through our free-to-use products
+        and ongoing AI research, we strive to empower individuals and business
+        with the benefits of artificial intelligence.
+      </p>
+	  <div class="gap">
+		<button class="btn-primary">Learn More</button>
+		<button class="btn">Sign Up</button>
+	  </div>
+    </div>
+  </div>
 </Main>
