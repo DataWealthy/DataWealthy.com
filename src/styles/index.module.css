@@ -1,4 +1,4 @@
 .hero {
-    height: 0.9vh;
+    min-height: 90vh;
     width: 100vw;
 }
