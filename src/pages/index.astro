@@ -3,13 +3,20 @@ import Main from "../layouts/main.astro";
 import styles from "../styles/index.module.css";
 import { Image } from "astro:assets";
 import hero_img from "../img/hero.jpg";
+import everyone_is_welcome from "../img/everyone-is-welcome.jpg";
+import library_showing_vasr_research_of_datawealthy from "../img/library-showing-vast-research-of-datawealthy.jpg";
 ---
 
 <Main title="Data Wealthy">
   <div class={styles.hero}>
     <center>
-		<Image src={hero_img} class="tinted" loading="lazy" alt="A group of people standing around a table with laptops." />
-	</center>
+      <Image
+        src={hero_img}
+        class="tinted"
+        loading="lazy"
+        alt="A group of people standing around a table with laptops."
+      />
+    </center>
     <div class={styles.hero_content}>
       <h1>Making AI accessible to all, with Data Wealthy</h1>
       <p>
@@ -18,10 +25,137 @@ import hero_img from "../img/hero.jpg";
         and ongoing AI research, we strive to empower individuals and business
         with the benefits of artificial intelligence.
       </p>
-	  <div class="gap">
-		<button class="btn-primary">Learn More</button>
-		<button class="btn">Sign Up</button>
-	  </div>
+      <div class="gap">
+        <button class="btn-primary">Learn More</button>
+        <button class="btn">Sign Up</button>
+      </div>
+    </div>
+  </div>
+
+  <div class:list={[styles.layout, "container", "block"]}>
+    <div>
+      <p><b>Empower</b></p>
+      <h2>Unlock the Power of AI for Everyone</h2>
+      <p class="mid">
+        At Data Wealthy, we believe that AI should be accessible to all. That’s
+        why we offer a range of free-to-use products that empower individuals
+        and business to harness the potential of artificial intelligence.
+      </p>
+      <div class={styles.layout_list_row}>
+        <div>
+          <span class="material-symbols-outlined">globe</span>
+          <p class="highlight">Discover</p>
+          <p class="mid">
+            Explore our suite of AI tools and solutions designed to simplify
+            your workflow.
+          </p>
+        </div>
+        <div>
+          <span class="material-symbols-outlined">star</span>
+          <p class="highlight">Innovate</p>
+          <p class="mid">
+            Stay ahead of the curve with our cutting-edge AI technologies and
+            research.
+          </p>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn">Learn More</button>
+        <button class="btn no-outline"
+          >Sign Up <span class="material-symbols-outlined">chevron_right</span
+          ></button
+        >
+      </div>
+    </div>
+    <div>
+      <Image src={everyone_is_welcome} alt="Everyone is Welcome" />
+    </div>
+  </div>
+
+  <div class:list={[styles.layout, "container", "block"]}>
+    <div>
+      <p><b>Empowering</b></p>
+      <h2>Advancing AI Research for a Better Future</h2>
+      <p class="mid">
+        At Data Wealthy, we are dedicated to conducting cutting-edge AI research
+        that pushes the boundaries of what is possible. Our team of experts is
+        committed to developing innovative solutions that address real-world
+        challenges and improve the lives of people around the globe.
+      </p>
+      <div class={styles.layout_list_column}>
+        <div>
+          <span class="material-symbols-outlined">check</span>
+          <p class="mid">Uncovering new insights through AI algorithms</p>
+        </div>
+        <div>
+          <span class="material-symbols-outlined">check</span>
+          <p class="mid">Solving complex problems with the power of AI</p>
+        </div>
+        <div>
+          <span class="material-symbols-outlined">check</span>
+          <p class="mid">Driving AI innovation for a better tomorrow</p>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn">Learn More</button>
+        <button class="btn no-outline"
+          >Sign Up <span class="material-symbols-outlined">chevron_right</span
+          ></button
+        >
+      </div>
+    </div>
+    <div>
+      <Image
+        src={library_showing_vasr_research_of_datawealthy}
+        alt="Library showing vast number of researches of datawealthy."
+      />
+    </div>
+  </div>
+
+  <div class:list={[styles.layout_2, "container", "block"]}>
+    <div class={styles.layout_2_primary}>
+      <p class="highlight">Empower</p>
+      <h2>Unlock the Power of Data with Data Wealthy</h2>
+      <p class="mid">
+        Data Wealthy’s AI products and services provide numerous benefits. From
+        automating repetitive tasks to gaining valuable insights, our AI
+        solutions help businesses and individuals make smarter decisions.
+      </p>
+    </div>
+    <div class={styles.layout_2_secondary}>
+      <div class={styles.layout_list_row}>
+        <div>
+          <span class="material-symbols-outlined">rebase</span>
+          <p class="highlight">Streamline Your Workflow with AI Solutions</p>
+          <p class="mid">
+            Data Wealthy’s AI products simplify complex processes and save you
+            time and effort.
+          </p>
+        </div>
+        <div>
+          <span class="material-symbols-outlined">face</span>
+          <p class="highlight">Stay Ahead of the Competition with AI</p>
+          <p class="mid">
+            Leverage the power of AI to gain a competitive edge in your
+            industry.
+          </p>
+        </div>
+        <div>
+          <span class="material-symbols-outlined">playing_cards</span>
+          <p class="highlight">Enhance Decision-Making with AI Insights</p>
+          <p class="mid">
+            Data Wealthy’s AI solutions provide valuable insights to support
+            informed decision-making.
+          </p>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn">Learn More</button>
+        <button class="btn no-outline"
+          >Sign Up <span class="material-symbols-outlined">chevron_right</span
+          ></button
+        >
+      </div>
     </div>
   </div>
 </Main>

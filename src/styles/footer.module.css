@@ -1,9 +1,17 @@
-.bottom_content {
+.bottom_content div {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 24px;
+    gap: 14px;
     flex-wrap: wrap;
+}
+
+.bottom_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
 .main_content {

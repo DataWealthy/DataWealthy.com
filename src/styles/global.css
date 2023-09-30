@@ -44,15 +44,29 @@ a:hover {
 }
 
 h1 {
+    margin: 0;
     font-size: 56px;
     font-weight: 700;
     line-height: 120%;
 }
 
 h2 {
-    font-size: 40px;
-    font-weight: 500;
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
     line-height: 120%;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.highlight {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 140%;
 }
 
 .container {
@@ -66,7 +80,15 @@ h2 {
     margin-bottom: 112px;
 }
 
+.mid {
+    font-size: 16px;
+}
+
 .small {
+    font-size: 12px;
+}
+
+.small a {
     font-size: 12px;
 }
 
@@ -118,6 +140,10 @@ button, input[type="submit"] {
     font-size: 16px;
     cursor: pointer;
     background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
 }
 
 .btn {
@@ -141,4 +167,15 @@ button, input[type="submit"] {
 .btn-primary:hover {
     background: var(--accent);
     border-color: var(--accent);
+}
+
+.no-outline {
+    border: 0;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32px;
 }

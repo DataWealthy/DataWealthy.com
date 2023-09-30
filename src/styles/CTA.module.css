@@ -1,0 +1,46 @@
+.layout_1 {
+    position: relative;
+}
+
+.layout_1 img {
+    width: 100vw;
+    max-width: 1440px;
+    height: calc(100vh - 72px);
+    max-height: 421px;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+}
+
+.layout_1_content {
+    position: absolute;
+    top: 112px;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100vw;
+    max-width: 768px;
+}
+
+.layout_2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.layout_2 div {
+    max-width: 616px;
+}
+
+@media screen and (max-width: 800px) {
+    .layout_2 {
+        flex-direction: column;
+    }
+}
+
+.layout_2 form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+}
