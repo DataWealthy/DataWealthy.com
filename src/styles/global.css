@@ -48,6 +48,11 @@ h1 {
     font-size: 56px;
     font-weight: 700;
     line-height: 120%;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 h2 {
@@ -55,12 +60,22 @@ h2 {
     font-size: 48px;
     font-weight: 700;
     line-height: 120%;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 h3 {
     font-size: 36px;
     font-weight: 700;
     line-height: 130%;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 .highlight {
