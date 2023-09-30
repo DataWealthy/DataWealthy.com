@@ -50,4 +50,7 @@
         flex-direction: column;
         flex-wrap: nowrap;
     }
+    .main_content {
+        justify-content: center;
+    }
 }
