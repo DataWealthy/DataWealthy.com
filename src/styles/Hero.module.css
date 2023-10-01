@@ -3,7 +3,7 @@
 }
 
 .hero img {
-    width: 100vw;
+    width: 90vw;
     max-width: 1440px;
     height: calc(100vh - 72px);
     max-height: 369px;
