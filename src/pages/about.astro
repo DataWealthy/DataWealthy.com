@@ -1,0 +1,103 @@
+---
+import Main from "../layouts/main.astro";
+import Hero from "../components/Hero.astro";
+import ocean from "../img/ocean.jpg";
+import styles from "../styles/index.module.css";
+import about_styles from "../styles/about.module.css";
+import { Image } from "astro:assets";
+import holding_hands from "../img/holding-hands.jpg";
+import pathway from "../img/pathway.jpg";
+import aditya_kumar from "../img/team/aditya_kumar.jpeg"
+import surender_kumar from "../img/team/surender_kumar.jpeg"
+import parveen_devi from "../img/team/parveen_devi.jpeg"
+---
+
+<Main title="About Us | Data Wealthy">
+  <Hero
+    title="Empowering AI Accessibility"
+    description="Data Wealthy is a non-profit organization dedicated to making AI accessible to all."
+    image={ocean}
+  />
+  <div class:list={[styles.layout, "container", "block"]}>
+    <div>
+      <p><b>Empowering</b></p>
+      <h2>Unlocking the Power of AI for All</h2>
+      <p class="mid">
+        At Data Wealthy, we are on a mission to make AI accessible to everyone.
+        Through our free-to-use products and AI research, we aim to empower
+        individuals and organizations with the tools and knowledge they need to
+        harness the power of artificial intelligence. Our work is driven by our
+        core values of inclusivity, innovation, and collaboration.
+      </p>
+      <div class="btn-group">
+        <button class="btn">Learn More</button>
+        <button class="btn no-outline"
+          >Sign Up <span class="material-symbols-outlined">chevron_right</span
+          ></button
+        >
+      </div>
+    </div>
+    <div>
+      <Image src={holding_hands} alt="Group of People holding hands." />
+    </div>
+  </div>
+
+  <div class:list={[styles.layout, "container", "block"]}>
+    <div>
+      <h2>
+        Unlocking the Potential of AI: Our Unique Approach to Development and
+        Research
+      </h2>
+      <p class="mid">
+        At Data Wealthy, we believe in democratizing AI by providing free-to-use
+        products and conducting cutting-edge research. Our approach aims to make
+        AI accessible to all while relying on donations and API sales for
+        sustainability. Join us in contributing to the future of AI.
+      </p> 
+    </div>
+    <div>
+      <Image src={pathway} alt="Pathway" />
+    </div>
+  </div>
+
+  <div class:list={[about_styles.team, "container", "block"]}>
+    <div class={about_styles.team_info}>
+        <p><b>Innovate</b></p>
+        <h2>Our Team</h2>
+        <p>Get to know the talented individuals driving the success of Data Wealthy.</p>
+        <button class="btn">Join Us</button>
+    </div>
+    <div class={about_styles.team_cards}>
+        <div class={about_styles.team_card}>
+            <Image src={aditya_kumar} alt="Aditya Kumar" loading="lazy" height={292} width={292} />
+            <div>
+                <p class="highlight">Aditya Kumar</p>
+                <p>CEO</p>
+                <div>
+                    <a href="https://x.com/kumar_aditya" target="_blank" rel="noreferrer"><img src="/X.svg" alt="Twitter" loading="lazy" /></a>
+                </div>
+            </div>
+        </div>
+        <div class={about_styles.team_card}>
+            <Image src={surender_kumar} alt="Surender Kumar" loading="lazy" height={292} width={292} />
+            <div>
+                <p class="highlight">Surender Kumar</p>
+                <p>Director</p>
+                <div>
+                    <a href="https://x.com/kumar_aditya" target="_blank" rel="noreferrer"><img src="/X.svg" alt="Twitter" loading="lazy" /></a>
+                </div>
+            </div>
+        </div>
+        <div class={about_styles.team_card}>
+            <Image src={parveen_devi} alt="Parveen Devi" loading="lazy" height={292} width={292} />
+            <div>
+                <p class="highlight">Parveen Devi</p>
+                <p>Director</p>
+                <div>
+                    <a href="https://x.com/kumar_aditya" target="_blank" rel="noreferrer"><img src="/X.svg" alt="Twitter" loading="lazy" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</Main>
