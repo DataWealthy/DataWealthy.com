@@ -43,6 +43,11 @@ a:hover {
     border-bottom-style: solid;
 }
 
+.no-decoration:hover {
+    padding-bottom: 0;
+    border: none;
+}
+
 h1 {
     margin: 0;
     font-size: 56px;
