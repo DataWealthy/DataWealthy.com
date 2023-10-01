@@ -26,6 +26,11 @@ p {
     font-size: 18px;
     line-height: 150%;
     font-weight: 400;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 a {
@@ -41,6 +46,11 @@ a:hover {
     color: var(--accent);
     padding-bottom: 5px;
     border-bottom-style: solid;
+}
+
+.no-decoration:hover {
+    padding-bottom: 0;
+    border: none;
 }
 
 h1 {

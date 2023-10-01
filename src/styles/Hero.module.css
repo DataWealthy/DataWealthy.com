@@ -1,0 +1,27 @@
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100vw;
+    max-width: 1440px;
+    height: calc(100vh - 72px);
+    max-height: 369px;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 450px) {
+    .hero img {
+        max-height: 594px;
+    }
+}
+
+.hero_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    max-width: 768px;
+}

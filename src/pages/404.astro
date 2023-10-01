@@ -1,0 +1,17 @@
+---
+import Main from "../layouts/main.astro";
+import styles from "../styles/404.module.css";
+---
+
+<Main>
+  <div class:list={[styles.header_parent, "container", "block"]}>
+    <div class={styles.header}>
+        <h1 class={styles.heading}>404</h1>
+        <p>
+          We apologise, but the page you're looking for seems to have gone missing.
+          It may have been moved, deleted, or maybe never existed in the first
+          place. How mysterious 👀
+        </p>
+      </div>
+  </div>
+</Main>

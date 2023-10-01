@@ -1,0 +1,13 @@
+---
+const {title, description, image} = Astro.props
+import styles from "../styles/Hero.module.css"
+import { Image } from "astro:assets";
+---
+
+<div class={styles.hero}>
+    <center><Image src={image} alt={description} loading="lazy" class="tinted" /></center>
+    <div class:list={["container", "block", styles.hero_content]}>
+        <h1>{title}</h1>
+        <p>{description}</p>
+    </div>
+</div>
