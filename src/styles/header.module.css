@@ -19,6 +19,7 @@
     left: 0;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
+    background-color: rgba(15, 0, 30, 0.5);
 }
 
 .middle_section {
