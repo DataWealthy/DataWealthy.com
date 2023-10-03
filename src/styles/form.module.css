@@ -1,0 +1,25 @@
+.layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.layout form {
+    width: 90vw;
+    max-width: 616px;
+}
+
+@media screen and (max-width: 1060px) {
+    .layout {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 467px) {
+    .btn_group {
+        flex-direction: column;
+        max-width: 90vw;
+    }
+}
