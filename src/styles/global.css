@@ -4,11 +4,11 @@
     font-family: 'Roboto', sans-serif;
     
     /* Colours */
-    --accent: #FB8618;
-    --primary: #7118F7;
-    --secondary: #1B0240;
-    --background: #0F001E;
-    --text: #FCFAFF;
+    --accent: rgb(251, 134, 24);
+    --primary: rgb(113, 24, 247);
+    --secondary: rgb(27, 2, 64);
+    --background: rgb(15, 0, 30);
+    --text: rgb(252, 250, 255);
 }
 
 body {
@@ -152,8 +152,20 @@ input {
     padding: 12px;
 }
 
-input::placeholder {
+input::placeholder, textarea::placeholder {
     color: var(--primary);
+}
+
+textarea {
+    border: 1px solid var(--text);
+    height: 156px;
+    width: calc(100% - 24px);
+    color: var(--primary);
+    font-size: 16px;
+    outline: none;
+    padding: 12px;
+    resize: vertical;
+    font-family: 'Roboto', sans-serif;
 }
 
 button, input[type="submit"] {
