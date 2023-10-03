@@ -26,11 +26,6 @@ p {
     font-size: 18px;
     line-height: 150%;
     font-weight: 400;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
 }
 
 a {
@@ -39,7 +34,7 @@ a {
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
-    transition: color 0.5s;
+    transition: color 0.5s, padding 0.5s;
 }
 
 a:hover {
@@ -58,11 +53,6 @@ h1 {
     font-size: 56px;
     font-weight: 700;
     line-height: 120%;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
 }
 
 h2 {
@@ -70,18 +60,24 @@ h2 {
     font-size: 48px;
     font-weight: 700;
     line-height: 120%;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
 }
 
 h3 {
     font-size: 36px;
     font-weight: 700;
     line-height: 130%;
-    word-wrap: break-word;
+}
+
+h4 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    margin: 0;
+}
+
+h1, h2, h3, h4, p {
+    word-break: break-word;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
